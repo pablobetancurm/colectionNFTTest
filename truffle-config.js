@@ -11,6 +11,7 @@ module.exports = {
       network_id: "*",
     },
     rinkeby: {
+      networkCheckTimeout: 1000000,
       provider: function () {
         return new HDWalletProvider(process.env.PRIVATE_KEY, process.env.RINKEBY_RPC_URL);
       },
